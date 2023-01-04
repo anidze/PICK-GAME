@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: "DynaPuff", cursive;
+  display: flex;
+  background: rgb(134, 69, 199);
+  background: linear-gradient(
+    97deg,
+    rgba(134, 69, 199, 1) 20%,
+    rgba(248, 142, 253, 1) 84%
+  );
+}
+.main-div {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  width: 70%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(200px);
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  overflow: hidden;
+  text-transform:uppercase;
+}
+
+.two-cards{
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  transition: all 0.75s;
+  text-align: center;
+  
+}
+.divs{
+  width: 100%;
+  height:900px;
+  
+}
+.actives{
+  background-color: rgba(104, 102, 102, 0.292);
+}
+.actives .current {
+  opacity: 1;
+}
+h1{
+  margin-top: 4rem;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: #9f00c5;
+}
+.score{
+  font-size: 8rem;
+  color: #9f00c5;
+  margin: 6rem 0rem;
+}
+.current{
+  margin: 0 auto;
+  width:55%;
+  background-color: #000000;
+  color:#9f00c5;
+  font-size: 2rem;
+  border-radius: 9px;
+  text-align: center;
+  transition: all 0.75s;
+}
+.current > *{
+  padding: 1.5rem 0rem ;
+}
+.current-score{
+  font-size: 4rem;
+}
+button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color:#9f00c5;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  font-family: "DynaPuff", cursive;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(20px);
+  padding: 1rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+.new-game {
+  top: 10%;
+}
+.roll {
+  top: 60%;
+}
+.hold {
+  top: 75%;
+}
+
+/** Buttons on Hover **/
+.new-game:hover {
+  padding: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  background-color:   rgb(247, 142, 253);
+  backdrop-filter: none;
+  color: white;
+  box-shadow: -2px 7px 15px -7px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 7px 15px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 7px 15px -7px rgba(0, 0, 0, 0.75);
+  transition: all 0.2s;
+}
+.roll:hover,
+.hold:hover {
+  padding: 1.3rem;
+  background-color:   rgb(247, 142, 253);
+  color: white;
+  box-shadow: -2px 7px 15px -7px rgba(0, 0, 0, 0.75);
+  /* -webkit-box-shadow: -2px 7px 15px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 7px 15px -7px rgba(0, 0, 0, 0.75); */
+  transition: all 0.3s;
+}
+
+button:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+button:focus {
+  outline: none;
+}
+
+.images {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%);
+  height: 8rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.hidden{
+  display: none;
+}
+.winner{
+  background-color: rgba(0, 0, 0, 0.703);
+}
